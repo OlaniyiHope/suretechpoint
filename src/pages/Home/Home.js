@@ -1,10 +1,13 @@
 import React from "react";
 import Footer from "../Footer";
-
+import sch from "./sch.png";
+import econ from "./econ.png";
+import crm from "./crm.png";
 const Home = () => {
   const divStyle = {
-    background: "url(img/breads.png)",
+    background: "url(img/kk.png)",
     backgroundSize: "cover",
+
     backgroundPosition: "center center",
     height: "800px",
   };
@@ -16,22 +19,25 @@ const Home = () => {
       >
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-md-12 col-12 pt-xl-5 pt-lg-3">
+            <div class="col-lg-12 col-md-12 col-12 pt-xl-5 pt-lg-3">
               <div class="inner-content text-content pt-lg-5 text-lg-start text-center mb-md-0 mb-0">
                 <div class="heading ms-lg-0 mx-auto mb-md-0 mb-3">
-                  <h1 class=" col-sm-12 text-white">
+                  <h1
+                    class=" col-sm-12 text-white"
+                    style={{ textAlign: "center" }}
+                  >
                     We Provide The Best ICT Services
                   </h1>
                 </div>
                 <div class="description mb-3">
-                  <p class="title">
+                  <p class="title" style={{ textAlign: "center" }}>
                     Sure Tech Point is a Technology Software Solutions that uses
                     technology to solve problems in the society. We provide the
                     best ICT services
                   </p>
                 </div>
-                <div class="btn-container d-flex flex-sm-wrap flex-wrap justify-content-center justify-content-lg-start">
-                  <a class="btn" href="https://osmosapp.com/auth/sign-up">
+                <div class="btn-container d-flex flex-sm-wrap flex-wrap justify-content-center ">
+                  <a class="btn" href="/about" style={{ color: "black" }}>
                     About Us
                   </a>
                   <div class="play-btn popup-iframe-btn">
@@ -40,38 +46,11 @@ const Home = () => {
                         <i class="fa-solid fa-play"></i>
                       </span>
                     </button>
-                    <span class="txt">Contact Us</span>
-
-                    <div class="popup-container position-fixed top-0 bottom-0 start-0 end-0 w-100 h-100">
-                      <div class="popup-content d-flex justify-content-center align-items-center w-100 h-100">
-                        <div class="popup-inner position-relative">
-                          <div class="close-btn-video position-absolute">
-                            <i class="fa-regular fa-circle-xmark"></i>
-                          </div>
-                          <iframe
-                            src="https://www.youtube.com/embed/_DqoQrImbKM"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
+                    <span class="txt" href="/contact">
+                      {" "}
+                      Contact Us
+                    </span>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-12" id="NANOM">
-              <div class>
-                <div class="pic" width="400">
-                  <video width="100%" autoplay loop muted>
-                    <source
-                      src="https://osmoscloud.com/allsvg/lead-to-quote.webm"
-                      type="video/webm"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
                 </div>
               </div>
             </div>
@@ -177,14 +156,7 @@ const Home = () => {
           <div class="row align-items-center">
             <div class="pic-content col-lg-7 col-12 order-lg-1 order-2 text-lg-start text-center">
               <div class="pic svg2 pe-lg-3 pe-0">
-                <lottie-player
-                  class="svg-animation"
-                  src="allsvg/create-and-customize-quote-template.json"
-                  background="error404.html"
-                  speed="1"
-                  style={{ width: "100%;" }}
-                  loop
-                ></lottie-player>
+                <img src={sch} />
               </div>
             </div>
             <div class="text-content col-lg-5 col-12 pb-4 order-lg-2 order-1 text-lg-start text-center">
@@ -302,14 +274,7 @@ const Home = () => {
             </div>
             <div class="pic-content col-lg-7 col-12 text-lg-start text-center">
               <div class="pic svg3 ps-lg-3 ps-0">
-                <lottie-player
-                  class="svg-animation"
-                  src="allsvg/reduce-your-workload.json"
-                  background="error404.html"
-                  speed="1"
-                  style={{ width: "100%;" }}
-                  loop
-                ></lottie-player>
+                <img src={econ} />
               </div>
             </div>
           </div>
@@ -320,14 +285,7 @@ const Home = () => {
           <div class="row align-items-center">
             <div class="pic-content col-lg-7 col-12 order-lg-1 order-2 text-lg-start text-center">
               <div class="pic svg4 pe-lg-3 pe-0">
-                <lottie-player
-                  class="svg-animation"
-                  src="allsvg/manage-all-services-or-product-in-one-place.json"
-                  background="error404.html"
-                  speed="1"
-                  style={{ width: "100%;" }}
-                  loop
-                ></lottie-player>
+                <img src={crm} />
               </div>
             </div>
             <div class="text-content col-lg-5 col-12 pb-4 order-lg-2 order-1 text-lg-start text-center">
